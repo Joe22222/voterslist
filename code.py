@@ -1,38 +1,38 @@
-ppl = []
-vot = []
-
-while True:
-    name = input("Type the name of the voter: ")
-    if name == "0":
-        break
-    ppl.append(name)
+print("joe","dpsdubai",sep = "@")
+print("dubai", end = "_2023")
+print("Hello")
 print()
-for i in ppl:
-    x = input("Is " + i + " 18 years or older? ")
-    if x.lower() in ["yes", "y"]:
-        y = input("Has " + i + " been involved in any crime? ")
-        if y.lower() in ["yes", "y"]:
-            print(i + " is not allowed to vote.")
-        else:
-            print(i + " is eligible to vote.")
-            vot.append(i)
-    else:
-        print("Sorry,",i,"is not old enough to vote.")
+print()
+print()
 
-print("Eligible voters:", vot)
+#Arithmetic operations
+num1 = eval(input("Type first number: "))
+num2 = eval(input("Type second number: "))
+ch = eval(input(''' Sum - 1,
+Dif - 2,
+Pro - 3
+Div - 4
 
-while True:
-    action = input("Do you want to delete a voter? (yes/no): ").lower()
-    if action == "no":
-        break
-    elif action == "yes":
-        voter_to_remove = input("Enter the name of the voter you want to remove: ")
-        if voter_to_remove in vot:
-            vot.remove(voter_to_remove)
-            print(voter_to_remove + " has been removed from the list of eligible voters.")
-        else:
-            print(voter_to_remove + " is not in the list of eligible voters.")
-    else:
-        print("Invalid input. Please enter 'yes' or 'no'.")
+Choice: '''))
+if ch ==1:
+    print(num1 + num2)
+elif ch ==2:
+    print(num1 - num2)
+elif ch ==3:
+    print(num1 * num2)
+else:
+    print(num1/num2)
 
-print("Final voters list:", vot)
+#Logical operations
+print("Hi" and 0)
+print("Hi" or 0)
+
+#Relational operations
+x = int(input())
+y = int(input())
+print(is x>y) #Indentity
+
+list1 = [1,2,3,4]
+print(is 10 in list1) #Membership and Identity
+
+
